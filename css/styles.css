@@ -201,7 +201,6 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  /*transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 /*section*/
 .visually-hidden {
@@ -533,6 +532,7 @@ img {
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
+/*оверлей*/
 .card-thumb {
   display: flex;
   position: relative;
@@ -613,6 +613,7 @@ img {
 .link-address {
   margin: 0;
 }
+/*іконки соцмереж*/
 .network {
   display: flex;
   justify-content: space-between;
@@ -660,6 +661,7 @@ img {
 .network-link:focus {
   background-color: var(--accent-color);
 }
+/*модальне вікно*/
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
