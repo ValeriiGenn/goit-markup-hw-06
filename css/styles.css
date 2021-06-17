@@ -15,7 +15,8 @@
   --bgicon-color: rgba(255, 255, 255, 0.1);
   --bgmodal-color: rgba(255, 255, 255, 1);
   --bgthumb-color: rgba(47, 48, 58, 0.8);
-  --bgthcard-color: rgba(33, 150, 243, 0, 9);
+  --bgthcard-color: rgba(33, 150, 243, 0.9);
+  --brdrinput-color: rgba(33, 33, 33, 0.2);
 }
 body {
   background-color: #ffffff;
@@ -688,6 +689,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
   height: 581px;
+  padding: 40px;
   background-color: var(--white-color);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -704,4 +706,87 @@ img {
   list-style: none;
   border-radius: 50%;
   border: none;
+}
+.button .modal-close:hover,
+/*.backdrop*/ .button.modal-close:focus {
+  fill: var(--accent-color);
+}
+.textarea {
+  resize: none;
+}
+.form {
+  width: 448px;
+  /* outline: 1px solid orange;*/
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  /*margin-top: 50px;*/
+}
+.form-field {
+  position: relative;
+  /*outline: 1px solid palegreen;*/
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form-field input {
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px;
+  background-repeat: 3px;
+  outline: 1px solid color var(--brdrinput-color);
+  max-height: 40px;
+  /*left: 576px;
+top: 314px;*/
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.form-field label {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  margin-bottom: 5px;
+  transform: translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-field__form-icon {
+  position: absolute;
+  bottom: 4px;
+  left: 15px;
+  transform: translateY(-50%);
+  fill: currentColor;
+  transition: fill var(--accent-color) var(--accent-color);
+}
+/*.form-field input::placeholder {
+  color: gray;
+}*/
+.leave {
+  font-family: Roboto;
+  font-size: 20px;
+
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+/*.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  color: var(--accent-color);
+  transform: translateY(-50px);
+}*/
+.form-icon {
+  position: absolute;
+  top: 65%;
+  left: 12px;
+  transform: translateY(-50%);
+  display: inline-block;
+}
+.form-input:focus ~ .form-icon {
+  fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus {
+  border: 1px solid var(--accent-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
