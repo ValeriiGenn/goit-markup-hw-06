@@ -799,9 +799,17 @@ top: 314px;*/
   padding: 12px 16px;
   width: 100%;
 }
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
 .form-check {
-  display: inline-block;
-  outline: 1px solid black;
+  display: flex;
+  align-items: center;
+  outline: none;
+  outline: 1px solid color var(--brdrinput-color);
 }
 .icon-check {
   display: inline-block;
@@ -809,10 +817,12 @@ top: 314px;*/
   height: 15px;
   background-color: chartreuse;
   border: 2px solid var(--black-color);
-  border-radius: 4px;
+  border-radius: 2px;
 }
 .checkbox:checked + .icon-check {
+  border-color: var(--accent-color);
   background-color: var(--accent-color);
   background-image: url(../images/symbol-defs.svg#icon-checkopt);
   background-size: contain;
+  background-origin: border-box;
 }
