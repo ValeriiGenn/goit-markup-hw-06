@@ -799,9 +799,20 @@ top: 314px;*/
   padding: 12px 16px;
   width: 100%;
 }
-/*.input[type="checkbox"]:focus + span {
-  color: var(--accent-color);
+.form-check {
+  display: inline-block;
+  outline: 1px solid black;
 }
-.form-field:focus-within .input[type="checkbox"] {
-  outline: 1px solid var(--accent-color);
-}*/
+.icon-check {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-color: chartreuse;
+  border: 2px solid var(--black-color);
+  border-radius: 4px;
+}
+.checkbox:checked + .icon-check {
+  background-color: var(--accent-color);
+  background-image: url(../images/symbol-defs.svg#icon-checkopt);
+  background-size: contain;
+}
