@@ -548,21 +548,23 @@
             </svg>
           </label>
           <label for="comment" class="form-field">
-            <span class="form-label">Коментарий</span>
+            <span class="form-label">Комментарий</span>
             <textarea
+              autofocus
               placeholder="Введите текст"
-              class="comment"
+              class="form-comment"
               name="comment"
               id="comment"
               rows="10"
-            >
-            </textarea>
+            ></textarea>
           </label>
-          <label for="polisi" class="form-field">
-            <input type="checkbox" name="polici" id="polisi" />
+          <label for="polisi" class="form-check">
+            <input class="checkbox" type="checkbox" name="polici" id="polisi" />
+
             <span class="form-label"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="">Условия договора</a></span
+              >Соглашаюсь с рассылкой и принимаю<a href=""
+                >Условия договора</a
+              ></span
             >
           </label>
           <button type="submit">отправить</button>

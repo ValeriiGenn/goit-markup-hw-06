@@ -711,7 +711,7 @@ img {
 /*.backdrop*/ .button.modal-close:focus {
   fill: var(--accent-color);
 }
-.textarea {
+textarea {
   resize: none;
 }
 .form {
@@ -732,7 +732,7 @@ img {
 .form-field input {
   width: 100%;
   margin: 0;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 40px;
   background-repeat: 3px;
   outline: 1px solid color var(--brdrinput-color);
   max-height: 40px;
@@ -749,7 +749,7 @@ top: 314px;*/
   transform: translateY(-50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-field__form-icon {
+/*.form-field__form-icon {
   position: absolute;
   bottom: 4px;
   left: 15px;
@@ -779,6 +779,8 @@ top: 314px;*/
   position: absolute;
   top: 65%;
   left: 12px;
+  bottom: 4px;
+  fill: currentColor;
   transform: translateY(-50%);
   display: inline-block;
 }
@@ -786,7 +788,20 @@ top: 314px;*/
   fill: var(--accent-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/*textarea.form-comment,*/
 .form-input:focus {
   border: 1px solid var(--accent-color);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-comment {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 16px;
+  width: 100%;
+}
+/*.input[type="checkbox"]:focus + span {
+  color: var(--accent-color);
+}
+.form-field:focus-within .input[type="checkbox"] {
+  outline: 1px solid var(--accent-color);
+}*/
