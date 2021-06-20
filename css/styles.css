@@ -203,6 +203,7 @@ img {
   font-size: 16px;
   line-height: 1.87;
   cursor: pointer;
+  border-radius: 4px;
 }
 /*section*/
 .visually-hidden {
@@ -842,11 +843,11 @@ textarea {
   background-color: var(--accent-color);
   color: var(--white-color);
   font-family: inherit;
-  /*font-family: Roboto;*/
+
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 .button-send:hover,
 .button-send:focus {
