@@ -475,24 +475,28 @@
             </li>
           </ul>
         </div>
-        <div class="">
-          <form action="">
-            <p>подпишитесь на рассылку</p>
-            <div class="form-field">
-              <label for="name"></label>
-              <input type="email" name="mail" id="mail" placeholder="E-mail" />
-            </div>
-            <button type="button">Подписаться</button>
+        <div class="subscription">
+          <p class="subscription-text">подпишитесь на рассылку</p>
+          <form class="form-subscription">
+            <label for="email"></label>
+            <input
+              class="subscription-mail"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
+            <button class="subscription-btn" type="button">Подписаться</button>
           </form>
         </div>
       </div>
     </footer>
-    <!--модальне вікно-->
+    <!--модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="button" data-modal-close>
-          <svg class="modal-close" width="30px" height="30px">
-            <use href="./images/close.svg#icon-close"></use>
+        <button class="button-modal" data-modal-close>
+          <svg class="modal-close" width="20" height="20">
+            <use href="./images/symbol-defs.svg#icon-close-blackopt"></use>
           </svg>
         </button>
 
