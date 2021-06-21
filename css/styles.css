@@ -733,6 +733,7 @@ textarea {
   padding: 20px;
 }
 .form-field {
+  outline: none;
   position: relative;
   display: flex;
   flex-direction: column;
