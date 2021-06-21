@@ -734,7 +734,6 @@ textarea {
 }
 .form-field {
   outline: none;
-  border: 1px solid color var(--brdrinput-color);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -743,13 +742,14 @@ textarea {
 .form-field input {
   width: 100%;
   margin: 0;
+  border: none;
+  box-sizing: border-box;
   padding: 10px 20px 10px 40px;
+  border: 1px solid color var(--brdrinput-color);
   border-radius: 4px;
   max-height: 40px;
-  box-sizing: border-box;
 }
 .form-field label {
-  outline: none;
   position: absolute;
   top: 50%;
   left: 30px;
