@@ -733,8 +733,8 @@ textarea {
   padding: 20px;
 }
 .form-field {
-  /* outline: none;*/
-  border: 1px solid color var(--brdrinput-color);
+  outline: none;
+  border: 0.5px solid color var(--brdrinput-color);
   position: relative;
   display: flex;
   flex-direction: column;
